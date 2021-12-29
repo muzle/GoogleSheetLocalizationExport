@@ -51,8 +51,21 @@ class YamlConfigurationSupport:
             languageRow: {9}
 # Row index of the first entry of the module.
             contentRow: {10}
-        '''.format(YamlConfigurationSupport.__ConfigurationFieldName, configuration.clientSecretPath,
-                   configuration.destinationPath,  configuration.sheetUrl, configuration.sheetKey,
-                   configuration.moduleColumn, configuration.keyColumn, configuration.commentColumn,
-                   configuration.localeColumn, configuration.languageRow, configuration.contentRow
+        '''.format(YamlConfigurationSupport.__ConfigurationFieldName,
+                   YamlConfigurationSupport.__make_yaml_value(configuration.clientSecretPath),
+                   YamlConfigurationSupport.__make_yaml_value(configuration.destinationPath),
+                   YamlConfigurationSupport.__make_yaml_value(configuration.sheetUrl),
+                   YamlConfigurationSupport.__make_yaml_value(configuration.sheetKey),
+                   YamlConfigurationSupport.__make_yaml_value(configuration.moduleColumn),
+                   YamlConfigurationSupport.__make_yaml_value(configuration.keyColumn),
+                   YamlConfigurationSupport.__make_yaml_value(configuration.commentColumn),
+                   YamlConfigurationSupport.__make_yaml_value(configuration.localeColumn),
+                   YamlConfigurationSupport.__make_yaml_value(configuration.languageRow),
+                   YamlConfigurationSupport.__make_yaml_value(configuration.contentRow)
                    )
+
+    @staticmethod
+    def __make_yaml_value(value):
+        if value is None:
+            return 'null'
+        return value
