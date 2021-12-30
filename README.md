@@ -36,7 +36,7 @@ And all the `.strings` files of your languages.
 1. To get started, you need to get a [gmail](https://www.google.com/intl/ru/gmail/about/) address, if you have one, you can proceed to step number 2
 2. The program uses the [pygsheets library](https://pygsheets.readthedocs.io/en/stable/).
 The next step you need to get 'client_secret.json’, the process is very well described in the [documentation for the library](https://pygsheets.readthedocs.io/en/stable/authorization.html#).
-3. Download the [latest version](https://github.com/muzle/GoogleSheetLocalizationExport/releases/download/v.0.0.2/GoogleSheetLocalizationExport.zip) of the program. Place the `GoogleSheetLocalizationExport.exec` file in the directory of your project.
+3. Download the [latest version](https://github.com/muzle/GoogleSheetLocalizationExport/releases/download/v.0.0.3/GoogleSheetLocalizationExport.zip) of the program. Place the `GoogleSheetLocalizationExport.exec` file in the directory of your project.
 4. Create your GoogleSheetTable. [Test example](https://docs.google.com/spreadsheets/d/1sYkZSq28FAtVKKjACiaQDgq8Q6y79MwqYLENPXEb4o0/edit?usp=sharing)
 5. Open the terminal and go to the directory of your project.
 Enter the following command:
