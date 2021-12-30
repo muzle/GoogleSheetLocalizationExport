@@ -38,7 +38,7 @@ private final class BundleToken {
 MODULE_HEADER = u'\tinternal enum {0} {{'
 MODULE_FOOTER = u'\n\t}'
 KEY_COMMENT = u'\n\t\t/// {0}'
-KEY_VALUE = u'\n\t\tinternal static let {1} = GSln.tr("GSln", "{0}.{1}")'
+KEY_VALUE = u'\n\t\tinternal static let {1} = GSln.tr("Localizable", "{0}.{1}")'
 
 KEY_FUNCTION_HEADER = u'\n\t\tinternal static func cantOpenApp({0}) -> String {{'
 KEY_FUNCTION_PARAMETER = u'_ p{0}: Any'
